@@ -23,4 +23,4 @@ The `editor.snippetSuggestions` setting in vscode `settings.json` will show snip
 
 ## Credits
 
-- Thanks to [andys8](https://github.com/andys8) for [vscode-jasmine](https://github.com/andys8/vscode-jest-snippets)
+- Thanks to [andys8](https://github.com/andys8) for [vscode-jest-snippets](https://github.com/andys8/vscode-jest-snippets)
