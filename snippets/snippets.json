@@ -1,0 +1,27 @@
+{
+  "console.log": {
+    "prefix": "cl",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
+  },
+  "arrow function": {
+    "prefix": "f",
+    "body": [
+      "($1) => $2"
+    ],
+    "description": "single-line function"
+  },
+  "braces": {
+    "prefix": "b",
+    "body": [
+      "{",
+        "$1",
+      "}"
+    ],
+    "description": "multi-line braces"
+  }
+  
+}
