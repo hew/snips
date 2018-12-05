@@ -4,7 +4,17 @@ Basic JS snippets.
 
 Also an attempt to share JS snippets with VS code and vim.
 
-### Globals
+## Installation
+
+For VS Code: Not published to vs-code marketplace yet.
+
+For Vim: 
+
+* `Plug 'neoclide/coc.nvim'`
+* `:CocInstall https://github.com/andys8/js-snippets.git#master`
+* `:so %MYVIMRC`
+
+## Snippets
 
 |  Trigger | Content       |
 | -------: | ------------- |
