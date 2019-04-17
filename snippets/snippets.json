@@ -21,6 +21,12 @@
       "}"
     ],
     "description": "multi-line braces"
+  },
+  "catch": {
+    "prefix": "ct",
+    "body": [
+      ".catch(err => console.log(err, \"error\"))"
+    ],
+    "description": "Promise catch"
   }
-  
 }

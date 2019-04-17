@@ -21,6 +21,7 @@ For Vim:
 |  `cl→`    | console.log   |
 |  `f→`     | arrow func    |
 |  `b→`     | braces        |
+|  `ct→`    | catch         |
 
 
 ## Settings
