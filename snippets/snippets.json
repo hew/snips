@@ -2,25 +2,37 @@
   "console.log": {
     "prefix": "cl",
     "body": [
-      "console.log('$1');"
+      "console.log('$1', $1);"
     ],
     "description": "Log output to console"
   },
   "arrow function": {
-    "prefix": "f",
+    "prefix": "func",
     "body": [
       "($1) => $2"
     ],
     "description": "single-line function"
   },
   "braces": {
-    "prefix": "b",
+    "prefix": "br",
     "body": [
-      "{",
-        "$1",
-      "}"
+      "{$1} $2"
     ],
-    "description": "multi-line braces"
+    "description": "braces"
+  },
+  "parens": {
+    "prefix": "par",
+    "body": [
+      "($1) $2"
+    ],
+    "description": "braces"
+  },
+  "import": {
+    "prefix": "imp",
+    "body": [
+      "import {$1} from '$2';"
+    ],
+    "description": "import statement"
   },
   "catch": {
     "prefix": "ct",
@@ -28,5 +40,17 @@
       ".catch(err => console.log(err, \"error\"))"
     ],
     "description": "Promise catch"
+  },
+  "component": {
+    "prefix": "comp",
+    "body": [
+      "export const $1 = ({$2,...props}) => {",
+      "  $4",
+      "  return (",
+      "    $3",
+        ")",
+      "}"
+    ],
+    "description": "React Component"
   }
 }
