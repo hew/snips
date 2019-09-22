@@ -19,9 +19,12 @@ For Vim:
 |  Trigger  | Content       |
 | -------:  | ------------- |
 |  `cl→`    | console.log   |
-|  `f→`     | arrow func    |
-|  `b→`     | braces        |
+|  `ff→`    | arrow func    |
+|  `br→`    | braces        |
+|  `par→`   | parens        |
 |  `ct→`    | catch         |
+|  `imp→`   | import        |
+|  `comp→`  | component     |
 
 
 ## Settings

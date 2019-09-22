@@ -7,7 +7,7 @@
     "description": "Log output to console"
   },
   "arrow function": {
-    "prefix": "func",
+    "prefix": "ff",
     "body": [
       "($1) => $2"
     ],
