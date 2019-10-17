@@ -11,7 +11,7 @@ For VS Code:
 For Vim: 
 
 * `Plug 'neoclide/coc.nvim'`
-* `:CocInstall https://github.com/hew/js-snippets.git#master`
+* `:CocInstall https://github.com/hew/js-snippets`
 * `:so %MYVIMRC`
 
 ## Snippets
