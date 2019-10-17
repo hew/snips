@@ -25,7 +25,7 @@
     "body": [
       "($1) $2"
     ],
-    "description": "braces"
+    "description": "parens"
   },
   "import": {
     "prefix": "imp",
