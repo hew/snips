@@ -1,56 +1,37 @@
 {
-  "console.log": {
-    "prefix": "cl",
-    "body": [
-      "console.log('$1', $1);"
-    ],
-    "description": "Log output to console"
-  },
   "arrow function": {
-    "prefix": "ff",
-    "body": [
-      "($1) => $2"
-    ],
-    "description": "single-line function"
+    "body": ["($1) => $2"],
+    "description": "single-line function",
+    "prefix": "func"
   },
   "braces": {
-    "prefix": "br",
-    "body": [
-      "{$1} $2"
-    ],
-    "description": "braces"
-  },
-  "parens": {
-    "prefix": "par",
-    "body": [
-      "($1) $2"
-    ],
-    "description": "parens"
-  },
-  "import": {
-    "prefix": "imp",
-    "body": [
-      "import {$1} from '$2';"
-    ],
-    "description": "import statement"
+    "body": ["{$1} $2"],
+    "description": "braces",
+    "prefix": "bra"
   },
   "catch": {
-    "prefix": "ct",
-    "body": [
-      ".catch(err => console.log(err, \"error\"))"
-    ],
-    "description": "Promise catch"
+    "body": [".catch(err => console.log(err, \"error\"))"],
+    "description": "Promise catch",
+    "prefix": "ct"
   },
   "component": {
-    "prefix": "comp",
-    "body": [
-      "export const $1 = ({$2,...props}) => {",
-      "  $4",
-      "  return (",
-      "    $3",
-        ")",
-      "}"
-    ],
-    "description": "React Component"
+    "body": ["export const $1 = ({$2,...props}) => {", "  $4", "  return (", "    $3", ")", "}"],
+    "description": "React Component",
+    "prefix": "comp"
+  },
+  "console.log": {
+    "body": ["console.log('$1', $1);"],
+    "description": "Log output to console",
+    "prefix": "cl"
+  },
+  "import": {
+    "body": ["import {$1} from '$2';"],
+    "description": "import statement",
+    "prefix": "imp"
+  },
+  "parens": {
+    "body": ["($1) $2"],
+    "description": "parens",
+    "prefix": "par"
   }
 }

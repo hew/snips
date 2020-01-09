@@ -4,28 +4,27 @@ Basic JS snippets.
 
 ## Installation
 
-For VS Code: 
+For VS Code:
 
-* **Not published to vs-code marketplace yet**.
+- **Not published to vs-code marketplace yet**.
 
-For Vim: 
+For Vim:
 
-* `Plug 'neoclide/coc.nvim'`
-* `:CocInstall https://github.com/hew/js-snippets`
-* `:so %MYVIMRC`
+- `Plug 'neoclide/coc.nvim'`
+- `:CocInstall https://github.com/hew/js-snippets`
+- `:so %MYVIMRC`
 
 ## Snippets
 
-|  Trigger  | Content       |
-| -------:  | ------------- |
-|  `cl→`    | console.log   |
-|  `ff→`    | arrow func    |
-|  `br→`    | braces        |
-|  `par→`   | parens        |
-|  `ct→`    | catch         |
-|  `imp→`   | import        |
-|  `comp→`  | component     |
-
+| Trigger | Content     |
+| ------: | ----------- |
+|   `cl→` | console.log |
+| `func→` | arrow func  |
+|  `bra→` | braces      |
+|  `par→` | parens      |
+|   `ct→` | catch       |
+|  `imp→` | import      |
+| `comp→` | component   |
 
 ## Settings
 
