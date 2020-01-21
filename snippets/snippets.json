@@ -1,37 +1,72 @@
 {
-  "arrow function": {
-    "body": ["($1) => $2"],
+  "arrowFunc": {
+    "body": [
+      "const $1 = ($2) => $3"
+    ],
     "description": "single-line function",
-    "prefix": "func"
+    "prefix": "arrow"
   },
   "braces": {
-    "body": ["{$1} $2"],
+    "body": [
+      "{$1} $2"
+    ],
     "description": "braces",
-    "prefix": "bra"
+    "prefix": "braces"
   },
   "catch": {
-    "body": [".catch(err => console.log(err, \"error\"))"],
+    "body": [
+      ".catch(err => console.log(err, \"error\"))"
+    ],
     "description": "Promise catch",
-    "prefix": "ct"
+    "prefix": "catch"
   },
   "component": {
-    "body": ["export const $1 = ({$2,...props}) => {", "  $4", "  return (", "    $3", ")", "}"],
+    "body": [
+      "export const $1 = ({$2, ...props}) => {",
+      "  $4",
+      "  return (",
+      "   $3",
+      " )",
+      "}"
+    ],
     "description": "React Component",
-    "prefix": "comp"
+    "prefix": "funcComp"
   },
-  "console.log": {
-    "body": ["console.log('$1', $1);"],
+  "consoleLog": {
+    "body": [
+      "console.log('$1', $2);"
+    ],
     "description": "Log output to console",
-    "prefix": "cl"
+    "prefix": "consoleLog"
   },
   "import": {
-    "body": ["import {$1} from '$2';"],
+    "body": [
+      "import {$1} from '$2';"
+    ],
     "description": "import statement",
-    "prefix": "imp"
+    "prefix": "import"
   },
-  "parens": {
-    "body": ["($1) $2"],
+  "parenthesis": {
+    "body": [
+      "($1) $2"
+    ],
     "description": "parens",
-    "prefix": "par"
+    "prefix": "parens"
+  },
+  "useEffect": {
+    "body": [
+      "useEffect(() => {",
+      "$1",
+      "}, []);"
+    ],
+    "description": "useState",
+    "prefix": "useEffect"
+  },
+  "useState": {
+    "body": [
+      "const [$1, $2] = useState($3);"
+    ],
+    "description": "useState",
+    "prefix": "useState"
   }
 }
