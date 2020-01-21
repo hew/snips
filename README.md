@@ -12,27 +12,6 @@ For Vim:
 
 - `Plug 'neoclide/coc.nvim'`
 - `:CocInstall https://github.com/hew/js-snippets`
-- `:so %MYVIMRC`
-
-## Snippets
-
-| Trigger | Content     |
-| ------: | ----------- |
-|   `cl→` | console.log |
-| `func→` | arrow func  |
-|  `bra→` | braces      |
-|  `par→` | parens      |
-|   `ct→` | catch       |
-|  `imp→` | import      |
-| `comp→` | component   |
-
-## Settings
-
-The `editor.snippetSuggestions` setting in vscode `settings.json` will show snippets on top of the suggestion list.
-
-```json
-"editor.snippetSuggestions": "top"
-```
 
 ## Credits
 
