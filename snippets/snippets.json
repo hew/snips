@@ -4,21 +4,21 @@
       "const $1 = ($2) => $3"
     ],
     "description": "single-line function",
-    "prefix": "_arrow"
+    "prefix": "zfunc"
   },
   "braces": {
     "body": [
       "{$1} $2"
     ],
     "description": "braces",
-    "prefix": "braces"
+    "prefix": "zbra"
   },
   "catch": {
     "body": [
       ".catch(err => console.log(err, \"error\"))"
     ],
     "description": "Promise catch",
-    "prefix": "catch"
+    "prefix": "zcatch"
   },
   "component": {
     "body": [
@@ -30,28 +30,28 @@
       "}"
     ],
     "description": "React Component",
-    "prefix": "funcComp"
+    "prefix": "zcomp"
   },
   "consoleLog": {
     "body": [
       "console.log('$1', $2);"
     ],
     "description": "Log output to console",
-    "prefix": "consoleLog"
+    "prefix": "zlog"
   },
   "import": {
     "body": [
       "import {$1} from '$2';"
     ],
     "description": "import statement",
-    "prefix": "import"
+    "prefix": "zimp"
   },
   "parenthesis": {
     "body": [
       "($1) $2"
     ],
     "description": "parens",
-    "prefix": "parens"
+    "prefix": "zpar"
   },
   "useEffect": {
     "body": [
@@ -60,13 +60,13 @@
       "}, []);"
     ],
     "description": "useState",
-    "prefix": "useEffect"
+    "prefix": "zuseEffect"
   },
   "useState": {
     "body": [
       "const [$1, $2] = useState($3);"
     ],
     "description": "useState",
-    "prefix": "useState"
+    "prefix": "zuseState"
   }
 }
