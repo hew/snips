@@ -1,4 +1,13 @@
 {
+  "blockComment": {
+    "body": [
+      "/*",
+      "* $1",
+      "*/"
+    ],
+    "description": "block comment",
+    "prefix": "__blockComment"
+  },
   "arrowFunc": {
     "body": [
       "const $1 = ({$2}) => $3"
