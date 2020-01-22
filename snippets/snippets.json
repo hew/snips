@@ -1,24 +1,29 @@
 {
   "arrowFunc": {
     "body": [
-      "const $1 = ($2) => $3"
+      "const $1 = ({$2}) => $3"
     ],
     "description": "single-line function",
-    "prefix": "zfunc"
-  },
-  "braces": {
-    "body": [
-      "{$1} $2"
-    ],
-    "description": "braces",
-    "prefix": "zbra"
+    "prefix": "__func"
   },
   "catch": {
     "body": [
       ".catch(err => console.log(err, \"error\"))"
     ],
     "description": "Promise catch",
-    "prefix": "zcatch"
+    "prefix": "__catch"
+  },
+  "tryCatch": {
+    "body": [
+      "try {",
+      " $1",
+      "}",
+      "catch (err) {",
+      " $2", 
+      "}"
+    ],
+    "description": "Promise catch",
+    "prefix": "__try"
   },
   "component": {
     "body": [
@@ -30,43 +35,48 @@
       "}"
     ],
     "description": "React Component",
-    "prefix": "zcomp"
+    "prefix": "__comp"
   },
   "consoleLog": {
     "body": [
       "console.log('$1', $2);"
     ],
     "description": "Log output to console",
-    "prefix": "zlog"
+    "prefix": "__log"
   },
   "import": {
     "body": [
       "import {$1} from '$2';"
     ],
     "description": "import statement",
-    "prefix": "zimp"
-  },
-  "parenthesis": {
-    "body": [
-      "($1) $2"
-    ],
-    "description": "parens",
-    "prefix": "zpar"
+    "prefix": "__imp"
   },
   "useEffect": {
     "body": [
       "useEffect(() => {",
-      "$1",
+      " $1",
       "}, []);"
     ],
     "description": "useState",
-    "prefix": "zuseEffect"
+    "prefix": "__useEffect"
   },
   "useState": {
     "body": [
       "const [$1, $2] = useState($3);"
     ],
     "description": "useState",
-    "prefix": "zuseState"
+    "prefix": "__useState"
+  },
+  "useCallback": {
+    "body": [
+      "const $1 = useCallback(",
+      " () => {",
+      "   $2(a, b);",
+      " },",
+      " [a, b],",
+      ");"
+    ],
+    "description": "useCallback",
+    "prefix": "__useCallback"
   }
 }
