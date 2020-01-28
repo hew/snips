@@ -87,5 +87,14 @@
     ],
     "description": "useCallback",
     "prefix": "__useCallback"
+  },
+  "flexCenter": {
+    "body": [
+      "display: 'flex',",
+      "justifyContent: 'center',",
+      "alignItems: 'center',"
+    ],
+    "description": "flex center",
+    "prefix": "__flexCenter"
   }
 }
