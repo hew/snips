@@ -30,7 +30,7 @@
       " * @description - `$2`",
       " */",
       "interface $1Props {",
-      " children: JSX.Element,",
+      "   children: JSX.Element,",
       " $3:",
       "}"
     ],
