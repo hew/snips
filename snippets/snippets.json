@@ -26,8 +26,8 @@
   "tsDocs": {
     "body": [
       "/*",
-      " * @name : `$1Props`",
-      " * @description : `$2`",
+      " * @name - `$1Props`",
+      " * @description - `$2`",
       " */",
       "interface $1Props {",
       " children: JSX.Element,",
