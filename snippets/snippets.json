@@ -1,99 +1,89 @@
 {
   "blockComment": {
-    "body": [
-      "/*",
-      "* $1",
-      "*/"
-    ],
+    "body": ["/*", "* $1", "*/"],
     "description": "block comment",
     "prefix": "__blockComment"
   },
-  "arrowFunc": {
+  "propTypesComment": {
     "body": [
-      "const $1 = ({$2}) => $3"
+      "$1.propTypes = {",
+      "  /*",
+      "   * @description $9",
+      "   */",
+      "  children: PropTypes.$2.isRequired",
+      "  /*",
+      "   * @param { $3 } The `$4`",
+      "   */",
+      "  $5: PropTypes.$6.isRequired",
+      "  /*",
+      "   * @return { $7 } The $8",
+      "   */",
+      "};"
     ],
+    "description": "React Component Comment",
+    "prefix": "__propTypes"
+  },
+  "tsDocs": {
+    "body": [
+      "/*",
+      " * @name : `$1Props`",
+      " * @description : `$2`",
+      " */",
+      "interface $1Props {",
+      " children: JSX.Element,",
+      " $3:",
+      "}"
+    ],
+    "description": "Component interface/doc string",
+    "prefix": "__doc"
+  },
+  "arrowFunc": {
+    "body": ["const $1 = ({$2}) => $3"],
     "description": "single-line function",
     "prefix": "__func"
   },
   "catch": {
-    "body": [
-      ".catch(err => console.log(err, \"error\"))"
-    ],
+    "body": [".catch(err => console.log(err, \"error\"))"],
     "description": "Promise catch",
     "prefix": "__catch"
   },
   "tryCatch": {
-    "body": [
-      "try {",
-      " $1",
-      "}",
-      "catch (err) {",
-      " $2", 
-      "}"
-    ],
+    "body": ["try {", " $1", "}", "catch (err) {", " $2", "}"],
     "description": "Promise catch",
     "prefix": "__try"
   },
   "component": {
-    "body": [
-      "export const $1 = ({$2, ...props}) => {",
-      "  $4",
-      "  return (",
-      "   $3",
-      " )",
-      "}"
-    ],
+    "body": ["export const $1 = ({$2, ...props}) => {", "  $4", "  return (", "   $3", " )", "}"],
     "description": "React Component",
     "prefix": "__comp"
   },
   "consoleLog": {
-    "body": [
-      "console.log('$1', $2);"
-    ],
+    "body": ["console.log('$1', $2);"],
     "description": "Log output to console",
     "prefix": "__log"
   },
   "import": {
-    "body": [
-      "import {$1} from '$2';"
-    ],
+    "body": ["import {$1} from '$2';"],
     "description": "import statement",
     "prefix": "__imp"
   },
   "useEffect": {
-    "body": [
-      "useEffect(() => {",
-      " $1",
-      "}, []);"
-    ],
+    "body": ["useEffect(() => {", " $1", "}, []);"],
     "description": "useState",
     "prefix": "__useEffect"
   },
   "useState": {
-    "body": [
-      "const [$1, $2] = useState($3);"
-    ],
+    "body": ["const [$1, $2] = useState($3);"],
     "description": "useState",
     "prefix": "__useState"
   },
   "useCallback": {
-    "body": [
-      "const $1 = useCallback(",
-      " () => {",
-      "   $2(a, b);",
-      " },",
-      " [a, b],",
-      ");"
-    ],
+    "body": ["const $1 = useCallback(", " () => {", "   $2(a, b);", " },", " [a, b],", ");"],
     "description": "useCallback",
     "prefix": "__useCallback"
   },
   "flexCenter": {
-    "body": [
-      "display: 'flex',",
-      "justifyContent: 'center',",
-      "alignItems: 'center',"
-    ],
+    "body": ["display: 'flex',", "justifyContent: 'center',", "alignItems: 'center',"],
     "description": "flex center",
     "prefix": "__flexCenter"
   }
