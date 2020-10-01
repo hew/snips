@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/hew/js-snippets"
+        "url": "https://github.com/hew/snips"
     },
     "engines": {
         "vscode": "^1.11.0"
@@ -29,19 +29,27 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/snippets.js.json"
             },
             {
                 "language": "javascriptreact",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/snippets.js.json"
             },
             {
                 "language": "typescript",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/snippets.js.json"
             },
             {
                 "language": "typescriptreact",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/snippets.js.json"
+            },
+            {
+                "language": "markdown",
+                "path": "./snippets/snippets.jira.json"
+            },
+            {
+                "language": "text",
+                "path": "./snippets/snippets.jira.json"
             }
         ]
     },
