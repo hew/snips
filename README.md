@@ -1,6 +1,6 @@
-# js-snippets (wip)
+# Snips ✂️
 
-Basic JS snippets.
+Some snippets that I use.
 
 ## Installation
 
@@ -11,7 +11,9 @@ For VS Code:
 For Vim:
 
 - `Plug 'neoclide/coc.nvim'`
-- `:CocInstall https://github.com/hew/js-snippets`
+- `:CocInstall https://github.com/hew/snips`
+
+*Note: If the installation doesn't work, try it without the https (http://github.com/hew/snips)*
 
 ## Credits
 
