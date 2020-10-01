@@ -4,9 +4,10 @@
     "prefix": "__jira",
     "body": [
       "----",
-      "User Experience",
       "",
-      "Implementation",
+      "User Experience: $1",
+      "",
+      "Implementation: $2",
       ""
     ]
   }
