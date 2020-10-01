@@ -1,0 +1,13 @@
+{
+  "jiraScaffold": {
+    "description": "Scaffold a Jira Comment",
+    "prefix": "__jira",
+    "body": [
+      "----",
+      "User Experience",
+      "",
+      "Implementation",
+      ""
+    ]
+  }
+}
