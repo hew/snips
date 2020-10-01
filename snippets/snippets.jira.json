@@ -1,6 +1,6 @@
 {
   "jiraScaffold": {
-    "description": "Scaffold a Jira Comment",
+    "description": "Jira Issue",
     "prefix": "__jira",
     "body": [
       "----",
@@ -9,6 +9,13 @@
       "",
       "Implementation: $2",
       ""
+    ]
+  },
+  "jiraLink": {
+    "description": "Jira Link",
+    "prefix": "__jiraLink",
+    "body": [
+      "[$1|http://$2]"
     ]
   }
 }
