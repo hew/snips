@@ -3,14 +3,21 @@
     "description": "Jira Issue",
     "prefix": "__jira",
     "body": [
+      "---",
       "",
-      "*User Experience:* $1",
+      "*OBJECTIVE:*",
       "",
-      "*Implementation:*",
+      "$1",
       "",
-      "# $2",
-      "# $3",
-      "# $4"
+      "*IMPLEMENTATION:*",
+      "",
+      "* $2",
+      "* $3",
+      "* $4",
+      "",
+      "*SUCCESS METRIC:*",
+      "",
+      "$5"
     ]
   },
   "jiraLink": {
