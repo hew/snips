@@ -26,5 +26,13 @@
     "body": [
       "[$1|http://$2]"
     ]
+  },
+  "jiraTable": {
+    "description": "Jira Table",
+    "prefix": "__jiraTable",
+    "body": [
+      "|| $1 || $2 ||",
+      "| $3 | $4 |"
+    ]
   }
 }
