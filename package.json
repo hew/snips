@@ -1,88 +1,92 @@
 {
-    "name": "js-snippets",
-    "displayName": "JS Snippets",
-    "description": "Code snippets for javascript",
-    "version": "0.0.1",
-    "publisher": "hew",
-    "icon": "images/hummus-icon.png",
-    "license": "MIT",
-    "scripts": {
-        "format:sort-json": "sort-json snippets/snippets.json",
-        "format:prettier": "prettier --write *.md snippets/*",
-        "format": "npm run format:sort-json && npm run format:prettier"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/hew/snips"
-    },
-    "engines": {
-        "vscode": "^1.11.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "galleryBanner": {
-        "color": "#99424f",
-        "theme": "light"
-    },
-    "contributes": {
-        "snippets": [
-
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.js.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/snippets.js.json"
-            },
-            {
-              "language": "typescript",
-              "path": "./snippets/snippets.js.json"
-            },
-            {
-              "language": "typescriptreact",
-              "path": "./snippets/snippets.js.json"
-            },
-
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.styles.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/snippets.styles.json"
-            },
-            {
-              "language": "typescript",
-              "path": "./snippets/snippets.styles.json"
-            },
-            {
-              "language": "typescriptreact",
-              "path": "./snippets/snippets.styles.json"
-            },
-
-            {
-              "language": "javascriptreact",
-              "path": "./snippets/snippets.react.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/snippets.react.json"
-            },
-
-            {
-                "language": "markdown",
-                "path": "./snippets/snippets.jira.json"
-            },
-            {
-                "language": "text",
-                "path": "./snippets/snippets.jira.json"
-            }
-        ]
-    },
-    "devDependencies": {
-        "prettier": "^1.14.2",
-        "sort-json": "^2.0.0"
-    }
+  "name": "js-snippets",
+  "displayName": "JS Snippets",
+  "description": "Code snippets for javascript",
+  "version": "0.0.1",
+  "publisher": "hew",
+  "icon": "images/hummus-icon.png",
+  "license": "MIT",
+  "scripts": {
+    "format:sort-json": "sort-json snippets/snippets.json",
+    "format:prettier": "prettier --write *.md snippets/*",
+    "format": "npm run format:sort-json && npm run format:prettier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hew/snips"
+  },
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "galleryBanner": {
+    "color": "#99424f",
+    "theme": "light"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.js.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.js.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.js.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.styles.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.styles.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.styles.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.styles.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.react.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.react.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.react.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.react.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/snippets.jira.json"
+      },
+      {
+        "language": "text",
+        "path": "./snippets/snippets.jira.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2",
+    "sort-json": "^2.0.0"
+  }
 }
