@@ -36,22 +36,5 @@
     ],
     "description": "Component interface/doc string",
     "prefix": "__doc"
-  },
-  "propTypesComment": {
-    "body": [
-      "$1.propTypes = {",
-      "  /*",
-      "   * @description $9",
-      "   */",
-      "  children: PropTypes.$2.isRequired",
-      "  /*",
-      "   * @param { $3 } The `$4`",
-      "   */",
-      "  $5: PropTypes.$6.isRequired",
-      "  /*",
-      "   * @return { $7 } The $8",
-      "   */",
-      "};"
-    ]
   }
 }
