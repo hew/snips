@@ -1,43 +1,15 @@
 {
   "blockComment": {
-    "body": ["/*", "* $1", "*/"],
+    "body": [
+      "/*", 
+       "* $1", 
+       "*/"
+    ],
     "description": "block comment",
-    "prefix": "__blockComment"
-  },
-  "propTypesComment": {
-    "body": [
-      "$1.propTypes = {",
-      "  /*",
-      "   * @description $9",
-      "   */",
-      "  children: PropTypes.$2.isRequired",
-      "  /*",
-      "   * @param { $3 } The `$4`",
-      "   */",
-      "  $5: PropTypes.$6.isRequired",
-      "  /*",
-      "   * @return { $7 } The $8",
-      "   */",
-      "};"
-    ],
-    "description": "React Component Comment",
-    "prefix": "__propTypes"
-  },
-  "tsDocs": {
-    "body": [
-      "/*",
-      " * @name - `$1Props`",
-      " * @description - `$2`",
-      " */",
-      "interface $1Props {",
-      " $3:",
-      "}"
-    ],
-    "description": "Component interface/doc string",
-    "prefix": "__doc"
+    "prefix": "__comment"
   },
   "arrowFunc": {
-    "body": ["const $1 = ({$2}) => $3"],
+    "body": ["const $1 = ({$2}) => {$3}"],
     "description": "single-line function",
     "prefix": "__func"
   },
@@ -47,43 +19,43 @@
     "prefix": "__catch"
   },
   "tryCatch": {
-    "body": ["try {", " $1", "}", "catch (err) {", " $2", "}"],
-    "description": "Promise catch",
+    "body": [
+      "try {", 
+        "$1", 
+        "}", 
+       "catch (err) {", 
+         " $2", 
+       "}"
+      ],
+    "description": "Try/catch",
     "prefix": "__try"
-  },
-  "component": {
-    "body": ["export const $1 = ({$2, ...props}) => {", "  $4", "  return (", "   $3", " )", "}"],
-    "description": "React Component",
-    "prefix": "__comp"
   },
   "consoleLog": {
     "body": ["console.log('$1', $2);"],
     "description": "Log output to console",
-    "prefix": "__log"
+    "prefix": "__l"
   },
   "import": {
     "body": ["import {$1} from '$2';"],
-    "description": "import statement",
-    "prefix": "__imp"
+    "description": "Import statement",
+    "prefix": "__import"
   },
-  "useEffect": {
-    "body": ["useEffect(() => {", " $1", "}, []);"],
-    "description": "useState",
-    "prefix": "__useEffect"
+  "reduce": {
+    "body": [
+      ".reduce((acc, curr, idx, array) => {",
+          "return acc",
+      "}, [])"
+    ],
+    "description": "Reduce method",
+    "prefix": "__import"
   },
-  "useState": {
-    "body": ["const [$1, $2] = useState($3);"],
-    "description": "useState",
-    "prefix": "__useState"
-  },
-  "useCallback": {
-    "body": ["const $1 = useCallback(", " () => {", "   $2(a, b);", " },", " [a, b],", ");"],
-    "description": "useCallback",
-    "prefix": "__useCallback"
-  },
-  "flexCenter": {
-    "body": ["display: 'flex',", "justifyContent: 'center',", "alignItems: 'center',"],
-    "description": "flex center",
-    "prefix": "__flexCenter"
+  "filter": {
+    "body": [
+      ".filter((each, idx) => {",
+          "return each === $1",
+      "})"
+    ],
+    "description": "Filter method",
+    "prefix": "__import"
   }
 }

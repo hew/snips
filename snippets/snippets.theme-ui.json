@@ -1,0 +1,10 @@
+{
+  "importThemeUI": {
+    "body": [
+      "/** @jsx jsx */",
+      "import { jsx } from 'theme-ui'"
+    ],
+    "description": "import Theme UI",
+    "prefix": "__tu"
+  }
+}

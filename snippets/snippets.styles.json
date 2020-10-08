@@ -1,0 +1,7 @@
+{
+  "flexCenter": {
+    "body": ["display: 'flex', placeItems: 'center'"],
+    "description": "flex center",
+    "prefix": "__flexCenter"
+  }
+}

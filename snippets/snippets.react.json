@@ -1,0 +1,57 @@
+{
+  "importReact": {
+    "body": ["import {$1} from 'react';"],
+    "description": "import React",
+    "prefix": "__ir"
+  },
+  "useEffect": {
+    "body": ["useEffect(() => {", " $1", "}, []);"],
+    "description": "useState",
+    "prefix": "__useEffect"
+  },
+  "useState": {
+    "body": ["const [$1, $2] = useState($3);"],
+    "description": "useState",
+    "prefix": "__useState"
+  },
+  "useCallback": {
+    "body": ["const $1 = useCallback(", " () => {", "   $2(a, b);", " },", " [a, b],", ");"],
+    "description": "useCallback",
+    "prefix": "__useCallback"
+  },
+  "component": {
+    "body": ["export const $1 = ({$2, ...props}) => {", "  $4", "  return (", "   $3", " )", "}"],
+    "description": "React Component",
+    "prefix": "__comp"
+  },
+  "tsDocs": {
+    "body": [
+      "/*",
+      " * @name - `$1Props`",
+      " * @description - `$2`",
+      " */",
+      "interface $1Props {",
+      " $3:",
+      "}"
+    ],
+    "description": "Component interface/doc string",
+    "prefix": "__doc"
+  },
+  "propTypesComment": {
+    "body": [
+      "$1.propTypes = {",
+      "  /*",
+      "   * @description $9",
+      "   */",
+      "  children: PropTypes.$2.isRequired",
+      "  /*",
+      "   * @param { $3 } The `$4`",
+      "   */",
+      "  $5: PropTypes.$6.isRequired",
+      "  /*",
+      "   * @return { $7 } The $8",
+      "   */",
+      "};"
+    ]
+  }
+}
