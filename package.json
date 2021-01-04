@@ -74,6 +74,14 @@
       {
         "language": "text",
         "path": "./snippets/snippets.jira.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.machine.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.machine.json"
       }
     ]
   },
