@@ -77,11 +77,11 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/snippets.machine.json"
+        "path": "./snippets/snippets.charts.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/snippets.machine.json"
+        "path": "./snippets/snippets.charts.json"
       }
     ]
   },
