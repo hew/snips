@@ -1,7 +1,7 @@
 {
-  "name": "js-snippets",
-  "displayName": "JS Snippets",
-  "description": "Code snippets for javascript",
+  "name": "snips",
+  "displayName": "Snippets",
+  "description": "Code snippets",
   "version": "0.0.1",
   "publisher": "hew",
   "icon": "images/hummus-icon.png",
@@ -77,11 +77,19 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/snippets.charts.json"
+        "path": "./snippets/snippets.machines.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/snippets.charts.json"
+        "path": "./snippets/snippets.machines.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.machines.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.machines.json"
       }
     ]
   },

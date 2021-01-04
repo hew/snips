@@ -1,5 +1,7 @@
 {
   "machine": {
+    "description": "state machine",
+    "prefix": "__machine",
     "body": [
       "import { Machine, assign } from 'xstate'", 
       "",
@@ -51,8 +53,6 @@
       "    },",
       "  }",
       ")"
-    ],
-    "description": "state machine",
-    "prefix": "__machine"
+    ]
   }
 }
