@@ -23,18 +23,5 @@
     "body": ["export const $1 = ({$2, ...props}) => {", "  $4", "  return (", "   $3", " )", "}"],
     "description": "React Component",
     "prefix": "__comp"
-  },
-  "tsDocs": {
-    "body": [
-      "/*",
-      " * @name - $1",
-      " * @description - $2",
-      " */",
-      "interface $1Props {",
-      " $3:",
-      "}"
-    ],
-    "description": "Component interface/doc string",
-    "prefix": "__doc"
   }
 }

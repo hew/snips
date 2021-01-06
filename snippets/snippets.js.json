@@ -8,6 +8,19 @@
     "description": "block comment",
     "prefix": "__comment"
   },
+  "docString": {
+    "body": [
+      "/*",
+      " * @name - $1",
+      " * @description - $2",
+      " */",
+      "interface $1Props {",
+      " $3:",
+      "}"
+    ],
+    "description": "Documentation block",
+    "prefix": "__doc"
+  },
   "arrowFunc": {
     "body": ["const $1 = ({$2}) => {$3}"],
     "description": "single-line function",
@@ -47,7 +60,7 @@
       "}, [])"
     ],
     "description": "Reduce method",
-    "prefix": "__import"
+    "prefix": "__reduce"
   },
   "filter": {
     "body": [
@@ -56,6 +69,6 @@
       "})"
     ],
     "description": "Filter method",
-    "prefix": "__import"
+    "prefix": "__filter"
   }
 }
