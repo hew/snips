@@ -24,7 +24,7 @@
   "arrowFunc": {
     "body": ["const $1 = ({$2}) => {$3}"],
     "description": "single-line function",
-    "prefix": "__func"
+    "prefix": "cons"
   },
   "catch": {
     "body": [".catch(err => console.log(err, \"error\"))"],
@@ -46,12 +46,12 @@
   "consoleLog": {
     "body": ["console.log('$1', $2);"],
     "description": "Log output to console",
-    "prefix": "__l"
+    "prefix": "cl"
   },
   "import": {
     "body": ["import {$1} from '$2';"],
     "description": "Import statement",
-    "prefix": "__import"
+    "prefix": "imp"
   },
   "reduce": {
     "body": [
@@ -70,5 +70,12 @@
     ],
     "description": "Filter method",
     "prefix": "__filter"
+  },
+  "className": {
+    "body": [
+      "className=\"$1\""
+    ],
+    "description": "className",
+    "prefix": "cn"
   }
 }
