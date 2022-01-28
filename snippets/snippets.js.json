@@ -24,7 +24,7 @@
   "arrowFunc": {
     "body": ["const $1 = ({$2}) => {$3}"],
     "description": "single-line function",
-    "prefix": "const"
+    "prefix": "__const"
   },
   "catch": {
     "body": [".catch(err => console.log(err, \"error\"))"],
@@ -46,7 +46,7 @@
   "consoleLog": {
     "body": ["console.log('$1', $2);"],
     "description": "Log output to console",
-    "prefix": "cl"
+    "prefix": "__l"
   },
   "import": {
     "body": ["import {$1} from '$2';"],
@@ -76,6 +76,6 @@
       "className=\"$1\""
     ],
     "description": "className",
-    "prefix": "classN"
+    "prefix": "__class"
   }
 }
